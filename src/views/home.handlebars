@@ -1,0 +1,25 @@
+<form id="productForm">
+    <div class="input-container">
+        <label for="title">Nombre: </label>
+        <input id="title" type="text" name="title" required/>
+    </div>
+    <div class="input-container">
+        <label for="price">Precio: </label>
+        <input id="price" type="text" name="price" required/>
+    </div>
+    <div class="input-container">
+        <label for="thumbnail">Foto URL: </label>
+        <input id="thumbnail" type="text" name="thumbnail" required/>
+    </div>
+    <button type="submit">Enviar</button>
+</form>
+<div id="productsContainer"></div>
+<form id="messageForm">
+    <input type="text" id="email" required/>
+    <div id="messagesContainer"></div>
+    <input type="text" id="message"/>
+    <button type="submit">Enviar mensaje</button>
+</form>
+{{> importScripts}}
+<script src="/socket.io/socket.io.js"></script>
+<script src="/scripts.js"></script>

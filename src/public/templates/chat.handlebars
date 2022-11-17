@@ -1,0 +1,7 @@
+{{#if messages}}
+    {{#each messages}}
+        <p class="message-main"><span class="mail">{{this.email}}</span><span class="date"> {{this.date}}</span><span class="message"> {{this.message}}</span></p>
+    {{/each}}
+{{else}}
+<p>No hay mensajes</p>
+{{/if}}
